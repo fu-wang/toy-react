@@ -10,13 +10,11 @@ class MyComponent extends Component  {
     constructor() {
         super();
         this.state = {
-            a: '1',
-            b: '2'
+            a: '1'
         }
     }
 
     render() {
-        console.log(this.state.a)
         return (
             <div>
                <button onclick={() => {this.setState({a: this.state.a + 1})}}>add</button>
@@ -27,7 +25,7 @@ class MyComponent extends Component  {
 }
 
 ToyReact.render(<MyComponent id="myComponent">
-    <span>abc</span>
-    <span></span>
-    <span></span>
+<span>abc</span>
+<span></span>
+<span></span>
 </MyComponent>, document.body)
